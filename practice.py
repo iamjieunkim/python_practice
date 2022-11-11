@@ -1,12 +1,9 @@
-#복합 대입 연산자
-number=100
-number+=10
-number+=20
-number+=30
-print("number:", number)
+#사용자 입력:input()
+print("#사용자 입력:input()")
+input("인사말을 입력하세요> ")
 
-#문자열 복합 대입 연산자
-string="안녕하세요"
-string+="!"
-string+="!"
-print("string:", string)
+
+#input()함수로 사용자 입력받기
+print("#input()함수로 사용자 입력받기")
+string=input("인사말을 입력하세요> ")
+print(string)
