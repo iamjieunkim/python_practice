@@ -1,3 +1,1 @@
-print("안녕하세요")
-print("지금부터 파이썬 공부를 시작합니다")
-print("열심히 시작해볼께요")
+print("Hello! Python Programming...")
