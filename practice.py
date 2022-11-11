@@ -1,5 +1,8 @@
-#대소문자 바꾸기:upper(), lower()
-a="Hello Python Programming...!"
-print(a)
-print(a.upper())
-print(a.lower())
+#문자열 양옆의 공백 제거하기"strip()
+input_a="""
+        안녕하세요
+문자열의 함수를 알아봅니다
+"""
+print(input_a)
+
+print(input_a.strip())
