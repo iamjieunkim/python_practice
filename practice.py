@@ -1,3 +1,8 @@
-#문자열의 길이 구하기
-print("#문자열의 길이 구하기")
-print(len("안녕하세요"))
+#숫자의 종류
+print(273)
+
+print(52.273)
+
+print(type(52))
+
+print(type(52.273))
