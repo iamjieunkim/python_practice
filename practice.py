@@ -1,10 +1,9 @@
-#input()을 2개 이상 입력받을때 split()
-print("#풀이1")
-A, B=input().split()
-A=int(A)
-B=int(B)
-print(A+B)
+#변수 교체 스왑(swap), 튜플
+a=input("문자열 입력> ")
+b=input("문자열 입력> ")
 
-print("#풀이2")
-A, B=map(int, (input().split()))
-print(A+B)
+print(a, b)
+c=a
+a=b
+b=c
+print(a, b)
