@@ -1,9 +1,6 @@
-#변수 교체 스왑(swap), 튜플
-a=input("문자열 입력> ")
-b=input("문자열 입력> ")
+#format() 함수로 숫자를 문자열로 변환하기
+string_a="{}".format(10)
 
-print(a, b)
-c=a
-a=b
-b=c
-print(a, b)
+#출력하기
+print(string_a)
+print(type(string_a))
