@@ -1,12 +1,14 @@
-#False로 변환되는 값
-print("#if 조건문에 0 넣기")
-if 0:
-    print("0은 True로 변환됩니다.")
-else:
-    print("0은 False로 변환됩니다.")
+#pass 키워드를 사용한 미구현 부분 입력
 
-print("#if조건문에 빈 문자열 넣기")
-if "":
-    print("빈 문자열은 True로 변환됩니다")
+#입력을 받습니다.
+number=input("정수입력> ")
+number=int(number)
+
+#조건문 사용
+if number > 0:
+    #양수일 때: 아직 미구현 상태입니다.
+    pass
+
 else:
-    print("빈 문자열은 False로 변환됩니다.")
+    #음수일 떄: 아직 미구현 상태입니다.
+    pass
