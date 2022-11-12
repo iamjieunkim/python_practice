@@ -1,11 +1,22 @@
-#if조건문에 else구믄을 추가해서 짝수와 홀수 구분
+#elif으로 계절구하기
 
-#입력을 받습니다.
-number=input("정수입력> ")
-number=int(number)
+"#날짜/시간과 관련된 기능을 가져옵니다."
+import datetime
 
-#if조건문을 사용합니다.
-if number%2 == 0:
-    print("짝수입니다.") #조건이 참일 때, 즉 짝수조건
+#현재 날짜/시간을 구합니다.
+#쉽게 사용할 수 있게 월을 변수에 저장합니다.
+now = datetime.datetime.now()
+month=now.month
+
+#조건문으로 계절을 확인합니다.
+if 3 <= month <= 5:
+    print("현재는 봄입니다.")
+
+elif 6 <= month <=8:
+    print("현재는 여름입니다.")
+
+elif 9 <= month <=11:
+    print("현재는 가을입니다.")
+
 else:
-    print("홀수입니다.") #조건이 거짓일 때, 즉 홀수조건
+    print("현재는 겨울입니다.")
