@@ -1,20 +1,18 @@
-#볼 만들기: 논리연산자
-#not 연산자
-print(not True)
-print(not False)
+#조건문의 기본사용
+print("#조건문의 기본사용")
 
-print("#not 연산자 조합하기")
-x=10
-under_20=x<20
-print("under_20: ", under_20)
-print("not under_20: ", not under_20)
+#입력을 받습니다.
+number=input("정수 입력> ")
+number=int(number)
 
-print("#and연산자와 or연산자")
-print(True and True)
-print(True and False)
-print(False and True)
-print(False and False)
-print(True or True)
-print(True or False)
-print(False or True)
-print(False or False)
+#양수조건
+if number > 0 :
+    print("양수입니다.")
+
+#음수조건
+if number < 0 :
+    print("음수입니다.")
+
+#0조건
+if number == 0 :
+    print("0입니다")
