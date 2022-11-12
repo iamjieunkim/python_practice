@@ -1,19 +1,26 @@
-#계절을 구분하는 프로그램
+#끝자리로 짝수와 홀수 구분
 
-"#날짜/시간과 관련된 기능을 가져옵니다."
-import datetime
+#입력을 받습니다.
+number = input("정수 입력> ")
 
-#현재 날짜/시간을 구합니다."
-now = datetime.datetime.now()
+#마지막 자리 숫자를 추출
+last_character=number[-1]
 
-if 3<= now.month <=5:
-    print("이번달은 {}월로 봄입니다!".format(now.month))
+#숫자로 변환하기
+last_number=int(last_character)
 
-if 6<= now.month <=8:
-    print("이번달은 {}월로 여름입니다!".format(now.month))
+#짝수확인
+if last_number==0 \
+    or last_number==2 \
+    or last_number==4 \
+    or last_number==6 \
+    or last_number==8 :
+    print("짝수입니다.")
 
-if 9<= now.month <=11:
-    print("이번달은 {}월로 가을입니다!".format(now.month))
-
-if 12 == now.month or now.month <= 2:
-    print("이번달은 {}월로 겨울입니다!".format(now.month))
+#홀수확인
+if last_number==1 \
+    or last_number==3 \
+    or last_number==5 \
+    or last_number==7 \
+    or last_number==9 :
+    print("홀수입니다.")
