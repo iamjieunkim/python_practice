@@ -1,18 +1,14 @@
-#조건문의 기본사용
-print("#조건문의 기본사용")
+#날짜/시간 출력하기
+"#날짜/시간과 관련된 기능을 가져옵니다."
+import datetime
 
-#입력을 받습니다.
-number=input("정수 입력> ")
-number=int(number)
+#현재 날짜/시간을 구합니다."
+now = datetime.datetime.now()
 
-#양수조건
-if number > 0 :
-    print("양수입니다.")
-
-#음수조건
-if number < 0 :
-    print("음수입니다.")
-
-#0조건
-if number == 0 :
-    print("0입니다")
+#출력합니다
+print(now.year, "년")
+print(now.month, "월")
+print(now.day, "일")
+print(now.hour, "시")
+print(now.minute, "분")
+print(now.second, "초")
