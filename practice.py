@@ -1,11 +1,10 @@
-#continue키워드
-#변수를 선언합니다.
-numbers=[5, 15, 6, 20, 7, 25]
+#4-3확인문제
+#1
+#숫지는 무작위로 입력해도 상관없습니다.
+key_list=["name", "hp", "mp", "level"]
+value_list=["기사", 200, 30, 5]
+character={}
 
-#반복을 돌립니다.
-for number in numbers:
-    #number가 10보다 작으면 다음 반복으로 넘어갑니다.
-    if number < 10:
-        continue
-    #출력합니다.
-    print(number)
+for i in range(len(key_list)):
+    character[key_list[i]]=value_list[i]
+print(character)
