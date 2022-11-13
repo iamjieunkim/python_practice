@@ -1,4 +1,11 @@
-#리스트에 한번에 여러 요소 추가하기
-list_a=[1, 2, 3]
-list_a.extend([4, 5, 6]) #append() 함수를 세번 반복한 효과
-print(list_a)
+#리스트 연결 연산자와 요소 추가의 차이
+list_a=[0, 1, 2, 3, 4, 5]
+print("# 리스트의 요소 하나 제거하기")
+
+#제거방법[1]- del
+del list_a[1]
+print("del list_a[1]: ", list_a)
+
+#제거방법[2]- pop()
+list_a.pop(2)
+print("pop(2): ", list_a)
