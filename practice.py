@@ -1,4 +1,4 @@
-#키가 존재하는지 확인하고 값에 접근하기
+#for 반복문과 딕셔너리
 
 #딕셔너리를 선언합니다.
 dictionary={
@@ -8,10 +8,6 @@ dictionary={
     "origin": "필리핀"
 }
 
-#존재하지 않는 키에 접근해 봅니다.
-value = dictionary.get("존재하지 않는 키")
-print("값: ", value)
-
-#None 확인 방법
-if value == None:
-    print("존재하지 않는 키에 접근했었습니다.")
+#for 반복문을 사용합니다.
+for key in dictionary:
+    print(key, ":", dictionary[key])
