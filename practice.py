@@ -8,11 +8,10 @@ dictionary={
     "origin": "필리핀"
 }
 
-#사용자로 입력을 받습니다.
-key=input(">접근하고자 하는 키: ")
+#존재하지 않는 키에 접근해 봅니다.
+value = dictionary.get("존재하지 않는 키")
+print("값: ", value)
 
-#출력합니다.
-if key in dictionary:
-    print(dictionary[key])
-else:
-    print("존재하지 않는 키에 접근하고 있습니다.")
+#None 확인 방법
+if value == None:
+    print("존재하지 않는 키에 접근했었습니다.")
