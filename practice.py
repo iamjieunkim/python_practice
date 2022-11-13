@@ -1,13 +1,13 @@
-#for 반복문과 딕셔너리
+#4-2 확인문제
 
-#딕셔너리를 선언합니다.
-dictionary={
-    "name": "7D 건조 망고",
-    "type": "당절임",
-    "ingredient": ["망고", "설탕", '메타중아황산나트륨', '치자황색소'],
-    "origin": "필리핀"
-}
+#1
+pets = [
+    {"name": "구름", "age": 5},
+    {"name": "초코", "age": 3},
+    {"name": "아지", "age": 1},
+    {"name": "호랑이", "age": 1}
+]
 
-#for 반복문을 사용합니다.
-for key in dictionary:
-    print(key, ":", dictionary[key])
+print("#우리 동네 애완 동물")
+for pet in pets:
+    print(pet["name"], str(pet["age"])+"살")
