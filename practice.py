@@ -1,10 +1,15 @@
 #4-3확인문제
-#2
-limit=10000
-i=1
-#sum은 파이썬 내부에서 사용하는 식별자이므로 sum_value라는 변수 이름을 사용합니다.
-sum_value=0
-while sum_value < limit:
-    sum_value += i
-    i += 1
-print("{}를 더할 때 {}을 넘으며 그때의 값은 {}입니다.".format(i-1, limit, sum_value))
+#3
+max_value=0
+a=0
+b=0
+
+for i in (1, 100//2+1):
+    j = 100 - i
+    if max_value < i * j:
+        max_value = i * j
+        a = i
+        b = j
+
+print("최대가 되는 경우: {} * {} = {}".format(a, b, max_value))
+
