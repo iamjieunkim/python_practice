@@ -1,10 +1,15 @@
-#해당하는 값 모두 제거하기
+#5초 동안 반복하기
+
+#시관과 관련된 기능을 가져옵니다.
+import time
+
 #변수를 선언합니다.
-list_test=[1, 2, 1, 2]
-value = 2
+number=0
 
-#list_text 내부에 value값이 있다면 반복
-while value in list_test:
-    list_test.remove(value)
+#5초 동안 반복합니다.
+target_tick=time.time() + 5
+while time.time() < target_tick:
+    number += 1
 
-print(list_test)
+#출력합니다.
+print("5초 동안 {}번 반복했습니다.".format(number))
