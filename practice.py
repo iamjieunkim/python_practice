@@ -1,12 +1,8 @@
-#for 반복문과 리스트
-#리스트를 선업합니다.
-array=[273, 32, 103, 57, 52]
+#4-1확인문제풀이
 
-#리스트에 반복문을 적용합니다.
-for element in array:
-    #출력합니다.
-    print(element)
+#1
+numbers=[273, 103, 5, 32, 65, 9, 72, 800, 99]
 
-
-for character in "안녕하세요":
-    print("-", character)
+for number in numbers:
+    if number>=100:
+        print("100이상의 수: ", number)
