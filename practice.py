@@ -1,15 +1,14 @@
-#5초 동안 반복하기
+#break키워드
+#i=0변수를 선언합니다.
+i=0
 
-#시관과 관련된 기능을 가져옵니다.
-import time
-
-#변수를 선언합니다.
-number=0
-
-#5초 동안 반복합니다.
-target_tick=time.time() + 5
-while time.time() < target_tick:
-    number += 1
-
-#출력합니다.
-print("5초 동안 {}번 반복했습니다.".format(number))
+#무한반복입니다.
+while True:
+    #몇번째 반복인지 출력합니다.
+    print("{}번째 반복문입니다.".format(i))
+    i += 1
+    #반복을 종료합니다.
+    input_text=input("반복을 종료하시겠습니까?(y/n): ")
+    if input_text in ["y", "Y"]:
+        print("반복을 종료하겠습니다.")
+        break
