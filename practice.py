@@ -1,14 +1,11 @@
-#break키워드
-#i=0변수를 선언합니다.
-i=0
+#continue키워드
+#변수를 선언합니다.
+numbers=[5, 15, 6, 20, 7, 25]
 
-#무한반복입니다.
-while True:
-    #몇번째 반복인지 출력합니다.
-    print("{}번째 반복문입니다.".format(i))
-    i += 1
-    #반복을 종료합니다.
-    input_text=input("반복을 종료하시겠습니까?(y/n): ")
-    if input_text in ["y", "Y"]:
-        print("반복을 종료하겠습니다.")
-        break
+#반복을 돌립니다.
+for number in numbers:
+    #number가 10보다 작으면 다음 반복으로 넘어갑니다.
+    if number < 10:
+        continue
+    #출력합니다.
+    print(number)
