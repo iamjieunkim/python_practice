@@ -1,17 +1,23 @@
-#reversed() 함수
+#enumerate() 함수와 리스트
+#변수를 선언합니다.
+example_list=["요소A", "요소B", "요소C"]
 
-#리스트를 선언하고 뒤집습니다.
-list_a=[1, 2, 3, 4, 5]
-list_reversed=reversed(list_a)
-
-#출력합니다.
-print("# reversed() 함수")
-print("reversed([1, 2, 3, 4, 5] :", list_reversed)
-print("list(reversed([1, 2, 3, 4, 5])):", list(list_reversed))
+#그냥 출력합니다.
+print('#단순 출력')
+print(example_list)
 print()
 
-#반복문을 적용해 봅시다.
-print("# reversed() 함수와 반복문")
-print("for i in reversed([1, 2, 3, 4, 5])")
-for i in reversed(list_a):
-    print("-", i)
+#enumerate() 함수를 적용해 출력합니다.
+print("#enumerate() 함수를 적용 출력")
+print(enumerate(example_list))
+print()
+
+#list() 함수로 강제 변환해 출력합니다.
+print('#list() 함수로 강제 변환 출력')
+print(list(enumerate(example_list)))
+print()
+
+#for 반복문과 enumerate() 함수 조합해서 사용하기
+print("# 반복문과 조합하기")
+for i, value in enumerate(example_list):
+    print("{}번째 요소는 {}입니다.".format(i, value))
