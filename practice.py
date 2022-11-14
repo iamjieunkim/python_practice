@@ -1,8 +1,15 @@
-#조건을 활용한 리스트 내포
+#if 조건문과 여러 줄 문자열(1)
 
-#리스트를 선언합니다.
-array=["사과", "자두", "초콜릿", "바나나", "체리"]
-output=[fruit for fruit in array if fruit != "초콜릿"]
+#변수를 선언합니다.
+number = int(input("정수 입력> "))
 
-#출력합니다.
-print(array)
+#if 조건문으로 홀수 짝수를 구분합니다.
+if number % 2 ==0:
+    print("""\
+        입력한 문자열은 {}입니다.
+        {}는(은) 짝수입니다.""".format(number, number))
+else:
+    print("""\
+        입력한 문자열은 {}입니다.
+        {}는(은) 홀수입니다.""".format(number, number))
+    
