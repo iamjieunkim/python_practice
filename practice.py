@@ -1,16 +1,14 @@
-#여러 줄 문자열과 if구문을 조합했을 때의 문제 해결(2)
+#reversed()함수와 이터레이터
 
 #변수를 선언합니다.
-number = int(input("정수 입력> "))
+numbers = [1, 2, 3, 4, 5, 6]
+r_num = reversed(numbers)
 
-#if 조건문으로 홀수 짝수를 구분합니다.
-if number%2==0:
-    print("\n".join([
-        "입력한 문자열은 {}입니다.",
-        "{}는(은) 짝수입니다."
-        ]).format(number, number))
-else:
-    print("\n".join([
-        "입력한 문자열은 {}입니다.",
-        "{}는(은) 홀수입니다."
-        ]).format(number, number))
+#reversed_numbers를 출력합니다.
+print("reversed_numbers :", r_num)
+print(next(r_num))
+print(next(r_num))
+print(next(r_num))
+print(next(r_num))
+print(next(r_num))
+
