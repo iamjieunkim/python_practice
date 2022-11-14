@@ -1,11 +1,11 @@
-#if 조건문과 긴 문자열
+#괄호로 문자열 연결하기
 
 #변수를 선언합니다.
-number = int(input("정수 입력> "))
-
-#if 조건문으로 홀수 짝수를 구분합니다.
-if number % 2 ==0:
-    print("입력한 문자열은 {}입니다.\n{}는(은) 짝수입니다.".format(number, number))
-else:
-    print("입력한 문자열은 {}입니다.\n{}는(은) 홀수입니다.".format(number, number))
-    
+test=(
+    "이렇게 입력해도"
+    "하나의 문자열로 연결되어"
+    "생성됩니다."
+)
+#출력합니다.
+print("test:", test)
+print("type(test):", type(test))
